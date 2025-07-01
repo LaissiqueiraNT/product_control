@@ -36,16 +36,12 @@ modal.btnSair.addEventListener('click', (e) =>{
     fecharModalProdutos();
 });
 
-function abrirModalProdutos(){
-    $("#btn-adicionar").click(function(){
-        $("#cadastro-produto").modal({backdrop: "static"});
-    });
+function abrirModalProdutos() {
+    $("#cadastro-produto").modal({ backdrop: "static" });
 }
 
 function fecharModalProdutos(){
-    $("#btn-sair").click(function(){
-        $("#cadastro-produto").modal("hide");
-    });
+    $("#cadastro-produto").modal("hide");
 }
 
 function criarProduto(){

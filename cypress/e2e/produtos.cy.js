@@ -43,7 +43,7 @@ describe('Cadastro de Produtos', () => {
     cy.get('#codigo').type('321')
     cy.get('#nome').type('Teclado')
     cy.get('#quantidade').type('5')
-    cy.get('#valor').type('abc') // valor inválido
+    cy.get('#valor').type('abc')
     cy.get('#data').type('2024-06-30')
     cy.get('#btn-salvar').click()
     cy.contains('Todos os campos são obrigatórios para o cadastro!').should('be.visible')
